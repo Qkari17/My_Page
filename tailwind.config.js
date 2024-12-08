@@ -4,12 +4,8 @@ module.exports = {
     "./src/**/*.{html,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {
-      backgroundColor: {
-        'blackk': '#020916'
-        }
-      },
-    },
+    extend: {},
+  },
   plugins: [],
 }
 
