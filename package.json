@@ -1,9 +1,8 @@
 {
   "name": "my_page",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel src/*.html",
+    "start": "parcel src/*.html --no-cache",
     "build": "parcel build src/*.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,6 +13,7 @@
   "devDependencies": {
     "parcel": "^2.13.2",
     "postcss": "^8.4.49",
+    "svgo": "^3.3.2",
     "tailwindcss": "^3.4.16"
   }
 }
