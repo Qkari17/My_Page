@@ -7,12 +7,12 @@
     <link href="./index.css" type="text/css" rel="stylesheet" />
   </head>
   <body class="bg-black">
-    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between">
+    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-black z-40">
       <div class="flex gap-4">
         <img src="./Union.svg" class="text-cyan-500" />
         <div class="flex flex-col justify-center">
           <p class="text-xl text-cyan-500">Dawid Thai Hai</p>
-          <p class="text-xs text-slate-50 opacity-40">FRONTED DEVELOPER</p>
+          <p class="text-xs text-slate-50 opacity-40 font-bold">FRONTED DEVELOPER</p>
         </div>
       </div>
       <nav></nav>
@@ -27,7 +27,7 @@
         <img src="Frame 2.png" />
         <div class="flex flex-col gap-8">
           <article class="flex flex-col gap-4">
-            <h1 class="text-2xl">
+            <h1 class="text-2xl font-bold">
               My name is Dawid and I’m an aspiring
               <span class="text-cyan-500">Frontend developer</span> and a keen
               Basketball enjoyer.
@@ -42,12 +42,12 @@
           </article>
           <div class="flex flex-col gap-4 items-start">
             <button
-              class="flex justify-center gap-3 px-4 py-2 bg-cyan-500 text-black rounded-lg"
+              class="flex justify-center gap-3 px-4 py-2 bg-cyan-500 text-black rounded-lg font-bold"
             >
               <img src="message-chat-circle 1.svg" />Get in touch
             </button>
             <button
-              class="flex justify-center gap-3 px-4 py-2 border-2 border-gray-700 text-cyan-500 rounded-lg"
+              class="flex justify-center gap-3 px-4 py-2 border-2 border-gray-700 text-cyan-500 rounded-lg font-bold"
             >
               <img src="image-user 1.svg" /> Get to know me
             </button>
@@ -55,17 +55,17 @@
         </div>
       </section>
       <section  class="grid grid-cols-1 py-14 px-6 gap-10">
-        <article>
-          <h1>MY SKILLS</h1>
-          <p1>
+        <article class="flex gap-4 flex-col">
+          <h1 class="font-bold text-gray-400 text-xl">MY SKILLS</h1>
+          <p1 class="text-2xl">
             I've picked up some cool skills along the way, and I'm excited to
-            share them with you.  Check out what I can do below!</p>
+            share them with you. Check out what I can do below!</p>
         </article>
         <div class="flex gap-4 flex-col">
-          <div class="border-2 gap-10 p-10"><img src="Frame 299.svg"/>
-            <ul class="border-t-2 text-sm">
-              <h1>Working knowledge</h1>
-              <li>— Semantic HTML5</li>
+          <div class="border-2 gap-10 p-5 rounded-lg flex flex-col shadow-inner backdrop-blur border-black bg-slate-900"><img src="Frame 299.svg" class="h-44 w-44 self-start"/>
+            <ul class="border-t-2 border-cyan-500 text-sm">
+              <h1 class="my-3 font-bold text-2xl">Working knowledge</h1>
+              <li >— Semantic HTML5</li>
               <li>— Flexbox</li>
               <li>— Markdown</li>
               <li>— JS: Local storage</li>
@@ -76,37 +76,71 @@
               <li>— SASS</li>
             </ul>
           </div>
-          <div class="border-2 gap-10 p-10"><img src="Frame 300.svg"/>
-            <ul class="border-t-2 text-sm">
-              <h1>Working knowledge</h1>
-              <li>— Semantic HTML5</li>
-              <li>— Flexbox</li>
-              <li>— Markdown</li>
-              <li>— JS: Local storage</li>
-              <li>— Figma</li>
-              <li>— CSS grid</li>
-              <li>— Forms</li>
-              <li>— JS: DOM manipulations</li>
-              <li>— SASS</li>
-            </ul>
+          <div class="border-2 gap-10 p-5 rounded-lg flex flex-col shadow-inner backdrop-blur border-black bg-slate-900"><img src="Frame 300.svg" class="h-44 w-44"/>
+            <ul class="border-t-2 border-cyan-500 text-sm">
+              <h1 class="my-3 font-bold text-2xl">Know something about</h1>
+              <li>— JavaScript ES6 + features </li>
+              <li>— CSS animations</li>
+              <li>— Working with API</li>
+              <li>— NPM Scripts</li>
+              <li>— PWA</li>
+              <li>— Git</li>
+              <li>— Accessibility</li>
+              </ul>
           </div>
-          <div class="border-2 gap-10 p-10"><img src="Frame 3001.svg"/>
-            <ul class="border-t-2 text-sm">
-              <h1>Working knowledge</h1>
-              <li>— Semantic HTML5</li>
-              <li>— Flexbox</li>
-              <li>— Markdown</li>
-              <li>— JS: Local storage</li>
-              <li>— Figma</li>
-              <li>— CSS grid</li>
-              <li>— Forms</li>
-              <li>— JS: DOM manipulations</li>
-              <li>— SASS</li>
+          <div class="border-2 gap-10 p-5 rounded-lg flex flex-col shadow-inner backdrop-blur border-black bg-slate-900"><img src="Frame 3001.svg" class="h-44 w-44"/>
+            <ul class="border-t-2 border-cyan-500 text-sm">
+              <h1 class="my-3 font-bold text-2xl">Want to learn</h1>
+              <li>— React</li>
+              <li>— Node</li>
+              <li>— Electron</li>
+              <li>— SSR</li>
+              <li>— TypeScript</li>
+              <li>— Gatsby</li>
+              <li>— WebSockets</li>
             </ul>
           </div>
         </div>
       </section>
+      <section>
+        <article>
+          <h1>Recent Projects</h1>
+          <p>Since diving into frontend development in 2023, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
+        </article>
+        <div>
+          <div></div>
+        </div>
+      </section>
+      <section>
+        <div>
+          <h1>After Hours</h1>
+          <p>Outside of my regular working hours, I delve into an array of activities and passions. Here's  a glimpse into how I spend my after-hours.</p>
+        </div>
+        <article>
+          <img/>
+          <p1>Electronic Music</p1>
+          <p>Outside of my regular working hours,  I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
+        </article>
+        <article>
+          <img/>
+          <p1>Star Wars Universum</p1>
+          <p>In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
+        </article>
+        <article>
+          <img/>
+          <p1>Video Games</p1>
+          <p>Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
+        </article>
+        <article>
+          <img/>
+          <p1>Strength Training</p1>
+          <p>Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
+        </article>
+      </section>
     </main>
+    <footer>
+      
+    </footer>
     <script src="main.js" type="module"></script>
   </body>
 </html>
