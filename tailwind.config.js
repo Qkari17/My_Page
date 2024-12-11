@@ -5,8 +5,8 @@ module.exports = {
   ],
   theme: {
     extend: {
-      bgGradientDeg: {
-      90: '90deg',
+      borderWidth: {
+      '1': '1px',
     }
         },
   },
