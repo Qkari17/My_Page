@@ -11,7 +11,7 @@ const offScreenMenu = document.querySelector(".off-screen-menu--js");
 hamMenu.addEventListener("click", () => {
   hamMenu.classList.toggle("relative");
   hamMenu.classList.toggle("justify-center");
-  offScreenMenu.classList.toggle("-translate-x-96");
+  offScreenMenu.classList.toggle("-translate-x-[50rem]");
   hamOne.classList.toggle("absolute5");
   hamOne.classList.toggle("-rotate-45");
    hamThree.classList.toggle("absolute");
