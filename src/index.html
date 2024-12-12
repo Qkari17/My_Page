@@ -7,7 +7,7 @@
     <link href="./index.css" type="text/css" rel="stylesheet" />
   </head>
   <body class="bg-gray-900">
-    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-40">
+    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-40 text-white">
       <div class="flex gap-4">
         <img src="./Union.svg" class="text-cyan-500" />
         <div class="flex flex-col justify-center">
@@ -15,24 +15,30 @@
           <p class="text-xs text-slate-50 opacity-40 font-bold">FRONTED DEVELOPER</p>
         </div>
       </div>
-      <nav></nav>
-      <button class="flex flex-col">
+      <nav class="hidden gap-8 items-center font-bold md:flex">
+        <a href="#about">About</a>
+        <a href="#skills">Skilss</a>
+        <a href="#projects">Projects</a>
+        <a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2"><img src="Vector.svg">Resume</a>
+        <a href="#contact" class="px-8 py-4 bg-cyan-500 font-bold text-gray-900 rounded-lg h-12 flex items-center">Contact</a>
+      </nav>
+      <button class="flex flex-col md:hidden">
         <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
         <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
         <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
       </button>
     </header>
     <main class="text-white">
-      <section class="flex py-5 px-6 flex-col gap-5">
-        <img src="Frame 2.png" />
+      <section class="flex py-5 px-6 flex-col gap-5 md:flex-row-reverse lg:gap-36" id="about">
+        <img src="Frame 2.png" class="md:w-60 lg:w-128"/>
         <div class="flex flex-col gap-8">
           <article class="flex flex-col gap-4">
-            <h1 class="text-2xl font-bold">
+            <h1 class="text-2xl font-bold lg:text-4xl xl:text-6xl">
               My name is Dawid and I’m an aspiring
-              <span class="text-cyan-500">Frontend developer</span> and a keen
+              <span class="text-cyan-500">Frontend developer</span> and a enthusiastic
               Basketball enjoyer.
             </h1>
-            <p class="text-gray-400">
+            <p class="text-gray-400 lg:text-2xl xl:text-3xl">
               You might be interested in checking the list of my
               <span class="text-white">skills</span>. Don’t forget to have a
               glimpse at my <span class="text-white">projects</span>. I’m
@@ -40,7 +46,7 @@
               <span class="text-white">contact me</span>
             </p>
           </article>
-          <div class="flex flex-col gap-4 items-start">
+          <div class="flex flex-col gap-4 items-start md:flex-row">
             <button
               class="flex justify-center gap-3 px-4 py-2 bg-cyan-500 text-black rounded-lg font-bold"
             >
@@ -54,14 +60,14 @@
           </div>
         </div>
       </section>
-      <section  class="grid grid-cols-1 py-14 px-6 gap-10">
+      <section  class="grid grid-cols-1 py-14 px-6 gap-10" id="skills">
         <article class="flex gap-4 flex-col">
           <h1 class="font-bold text-gray-400 text-xl">MY SKILLS</h1>
-          <p1 class="text-2xl">
+          <p1 class="text-2xl lg:text-3xl">
             I've picked up some cool skills along the way, and I'm excited to
             share them with you. Check out what I can do below!</p>
         </article>
-        <div class="grid grid-cols-1 gap-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
           <div class="border-1 border-t-0 gap-10 p-5 rounded-lg flex flex-col backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"><img src="Frame 299.svg" class="h-44 w-44 self-start"/>
             <ul class="border-t-2 border-cyan-500 text-sm">
               <h1 class="my-3 font-bold text-2xl">Working knowledge</h1>
@@ -102,12 +108,32 @@
           </div>
         </div>
       </section>
-      <section class="grid grid-cols-1 py-14 px-6 gap-10">
+      <section class="grid grid-cols-1 py-14 px-6 gap-10" id="projects">
         <article class="flex gap-4 flex-col">
           <h1 class="font-bold text-gray-400 text-xl">Recent Projects</h1>
-          <p class="text-2xl">Since diving into frontend development in 2024, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
+          <p class="text-2xl lg:text-3xl">Since diving into frontend development in 2024, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
         </article>
-        <div class="grid grid-cols-1 gap-4">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
+            <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
+          </div>
+            <div class=" p-5 flex flex-col gap-10">
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-4"><h1 class="font-bold text-2xl">simple-editor</h1><span class="flex px-2 py-0.5 rounded-md bg-gray-400/10 gap-0.5 items-center"><img src="star-01 1.svg" class="h-4 w-4 "><p class="text-gray-400 ">27</p></span></div>
+                <p class="text-xl text-gray-400">Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
+                <div class="flex gap-2">
+                  <span class="px-2 py-1 text-lg font-bold bg-gray-400/10 rounded-sm">HTML</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-4 items-start">
+              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="browser 1.svg" class="w-6 h-6">View demo</button>
+              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="github.svg" class="w-6 h-6">Source code</button>
+            </div>
+            </div>
+          </div>
           <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
             <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
             <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
@@ -133,9 +159,9 @@
       <section class="flex flex-col py-14 px-6 gap-10">
         <div class="flex gap-4 flex-col">
           <h1 class="font-bold text-gray-400 text-xl">After Hours</h1>
-          <p class="text-2xl">Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
+          <p class="text-2xl lg:text-3xl">Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
         </div>
-        <div class="grid grid-cols-1 gap-14">
+        <div class="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4">
         <article class="flex flex-col gap-6">
           <img src="Frame 16.png" class="h-120 rounded-2xl"/>
           <div class="flex flex-col gap-1.5">
@@ -167,7 +193,7 @@
       </div>
       </section>
     </main>
-    <footer class="flex flex-col py-14 px-4 gap-10">
+    <footer class="flex flex-col py-14 px-4 gap-10" id="contact">
       <div class="flex flex-col gap-10 items-center">
         <div class="flex flex-col gap-4 items-center">
           <h1 class="font-bold text-3xl text-white">Let’s work together</h1>

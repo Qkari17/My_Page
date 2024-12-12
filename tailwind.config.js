@@ -6,11 +6,14 @@ module.exports = {
   theme: {
     extend: {
       borderWidth: {
-      '1': '1px',
+        '1': '1px',
     },
     height: {
       '120': '30rem',
-    }
+    },
+ width: {
+        '128': '32rem'
+    },
         },
   },
   plugins: [],
