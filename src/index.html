@@ -7,7 +7,7 @@
     <link href="./index.css" type="text/css" rel="stylesheet" />
   </head>
   <body class="bg-gray-900">
-    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-40 text-white">
+    <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-30 text-white">
       <div class="flex gap-4">
         <img src="./Union.svg" class="text-cyan-500" />
         <div class="flex flex-col justify-center">
@@ -22,12 +22,20 @@
         <a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2"><img src="Vector.svg">Resume</a>
         <a href="#contact" class="px-8 py-4 bg-cyan-500 font-bold text-gray-900 rounded-lg h-12 flex items-center">Contact</a>
       </nav>
-      <button class="flex flex-col md:hidden">
-        <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
-        <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
-        <div class="w-10 h-1 bg-white my-1 rounded-sm"></div>
+      <button class="flex flex-col md:hidden ham-menu--js z-50 ">
+        <div class="w-10 h-1 bg-white my-1 rounded-sm 1-ham--js"></div>
+        <div class="w-10 h-1 bg-white my-1 rounded-sm 2-ham--js"></div>
+        <div class="w-10 h-1 bg-white my-1 rounded-sm 3-ham--js"></div>
       </button>
     </header>
+    <div class="bg-gray-900  w-full fixed top-[5.625rem] flex flex-col items-center transition z-40 -right-96 off-screen-menu--js duration-700 ">
+      <ul class="text-white font-bold text-lg py-6">
+        <li class="ham-menu--js"><a href="#about">About</a></li>
+        <li><a href="#skills">Skilss</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
     <main class="text-white">
       <section class="flex py-5 px-6 flex-col gap-5 md:flex-row-reverse lg:gap-36" id="about">
         <img src="Frame 2.png" class="md:w-60 lg:w-128"/>
@@ -214,5 +222,6 @@
       </div>
     </footer>
     <script src="main.js" type="module"></script>
+    <script src="hamburger.js" type="module"></script>
   </body>
 </html>
