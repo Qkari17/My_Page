@@ -14,15 +14,15 @@ fetch(`https://api.github.com/users/${username}/repos`)
           </div>
             <div class=" p-5 flex flex-col gap-10">
               <div class="flex flex-col gap-4">
-                <div class="flex gap-4"><h1 class="font-bold text-2xl">${name}</h1><span class="flex px-2 py-0.5 rounded-md bg-gray-400/10 gap-0.5 items-center"><img src="star-01 1.svg" class="h-4 w-4 "><p class="text-gray-400 ">${stargazers_count}</p></span></div>
+                <div class="flex gap-4"><h1 class="font-bold text-2xl">${name}</h1><span class="flex px-2 py-0.5 rounded-md bg-gray-400/10 gap-0.5 items-center"><img src="/star-01%201.8b87b6bb.svg" class="h-4 w-4 "><p class="text-gray-400 ">${stargazers_count}</p></span></div>
                 <p class="text-xl text-gray-400">${description}</p>
                 <div class="flex gap-2">
                   <span class="px-2 py-1 text-lg font-bold bg-gray-400/10 rounded-sm">${topics}</span>
                 </div>
             </div>
             <div class="flex flex-col gap-4 items-start">
-              <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="browser 1.svg" class="w-6 h-6">View demo</a>
-              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="github.svg" class="w-6 h-6">Source code</a>
+              <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="/browser%201.d70f8b2a.svg"  class="w-6 h-6">View demo</a>
+              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src=/github.2f4ba1ad.svg class="w-6 h-6">Source code</a>
             </div>
             </div>
           </div>`
