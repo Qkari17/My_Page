@@ -12,18 +12,18 @@
   <body class="bg-gray-900 font-DMsans">
     <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-30 text-white">
       <div class="flex gap-4">
-        <img src="./Union.svg" class="text-cyan-500" />
+        <img src="./Union.svg" class="text-cyan-500 animate-rotation" />
         <div class="flex flex-col justify-center">
           <p class="text-xl text-cyan-500">Dawid Thai Hai</p>
           <p class="text-xs text-slate-50 opacity-40 font-bold">FRONTED DEVELOPER</p>
         </div>
       </div>
-      <nav class="hidden gap-8 items-center font-bold md:flex">
-        <a href="#about">About</a>
-        <a href="#skills">Skilss</a>
-        <a href="#projects">Projects</a>
-        <a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2"><img src="Vector.svg">Resume</a>
-        <a href="#contact" class="px-8 py-4 bg-cyan-500 font-bold text-gray-900 rounded-lg h-12 flex items-center">Contact</a>
+      <nav class="hidden items-center font-bold md:flex">
+        <a href="#about" class="rounded-2xl py-1 px-4 hover:bg-white/25">About</a>
+        <a href="#skills"class="rounded-2xl py-1 px-4 hover:bg-white/25">Skills</a>
+        <a href="#projects"class="rounded-2xl py-1 px-4 hover:bg-white/25">Projects</a>
+        <a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2 rounded-2xl py-1 px-4 hover:bg-white/25"><img src="Vector.svg" class=>Resume</a>
+        <a href="#contact" class="px-8 py-4 bg-cyan-500 font-bold text-gray-900 rounded-lg h-12 flex items-center hover:bg-opacity-70 hover:text-white">Contact</a>
       </nav>
       <button class="flex flex-col md:hidden ham-menu--js z-50 ">
         <div class="w-10 h-1 bg-white my-1 rounded-sm transition duration-700 ease-in-out ham-one--js"></div>
@@ -33,11 +33,11 @@
     </header>
     <div class="bg-gray-900/80  w-full fixed top-[5.625rem] flex flex-col items-center transition z-40 -right-[50rem] off-screen-menu--js duration-1000 ease-in-out md:hidden">
       <ul class="text-white font-bold text-lg py-2 flex flex-col gap-2 my-2">
-        <li><a href="#about">About</a></li>
+        <li><a href="#about" class="active:animate-pulse">About</a></li>
         <li><a href="#skills">Skilss</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2">Resume</a></li>
+        <li><a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2 text-cyan-500">Resume</a></li>
       </ul>
     </div>
     <main class="text-white">
@@ -45,9 +45,9 @@
         <img src="Frame 2.png" class="md:w-60 lg:w-128"/>
         <div class="flex flex-col gap-8">
           <article class="flex flex-col gap-4">
-            <h1 class="text-2xl font-bold lg:text-4xl xl:text-6xl">
+            <h1 class="text-2xl font-bold lg:text-4xl xl:text-6xl group">
               My name is Dawid and I’m an aspiring
-              <span class="text-cyan-500">Frontend developer</span> and a enthusiastic
+              <span class="text-cyan-500 group-hover:text-red-500 transition-all ease-in-out duration-500">Frontend developer</span> and a enthusiastic
               Basketball enjoyer.
             </h1>
             <p class="text-gray-400 lg:text-2xl xl:text-3xl">
@@ -60,12 +60,12 @@
           </article>
           <div class="flex flex-col gap-4 items-start md:flex-row">
             <a href="#contact"
-              class="flex justify-center gap-3 px-4 py-2 bg-cyan-500 text-black rounded-lg font-bold"
+              class="flex justify-center gap-3 px-4 py-2 bg-cyan-500 text-black rounded-lg font-bold hover:bg-opacity-70 hover:text-white"
             >
               <img src="message-chat-circle 1.svg" />Get in touch
           </a>
             <a href="#skills"
-              class="flex justify-center gap-3 px-4 py-2 border-2 border-gray-700 text-cyan-500 rounded-lg font-bold"
+              class="flex justify-center gap-3 px-4 py-2 border-2 border-gray-700 text-cyan-500 rounded-lg font-bold hover:bg-cyan-500/40 hover:text-white"
             >
               <img src="image-user 1.svg" /> Get to know me
             </a>
@@ -126,11 +126,11 @@
           <p class="text-2xl lg:text-3xl">Since diving into frontend development in 2024, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
         </article>
         <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 repository--js">
-          <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
+          <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] group hidden">
             <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-red-400 group-hover:opacity-100 duration-300 ease-in-out"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-amber-400 group-hover:opacity-100 duration-500 ease-in-out"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-green-500 group-hover:opacity-100 duration-700 ease-in-out"></span>
           </div>
             <div class=" p-5 flex flex-col gap-10">
               <div class="flex flex-col gap-4">
@@ -141,28 +141,8 @@
                 </div>
             </div>
             <div class="flex flex-col gap-4 items-start">
-              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="browser 1.svg" class="w-6 h-6">View demo</button>
-              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="github.svg" class="w-6 h-6">Source code</button>
-            </div>
-            </div>
-          </div>
-          <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
-            <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-          </div>
-            <div class=" p-5 flex flex-col gap-10">
-              <div class="flex flex-col gap-4">
-                <div class="flex gap-4"><h1 class="font-bold text-2xl">simple-editor</h1><span class="flex px-2 py-0.5 rounded-md bg-gray-400/10 gap-0.5 items-center"><img src="star-01 1.svg" class="h-4 w-4 "><p class="text-gray-400 ">27</p></span></div>
-                <p class="text-xl text-gray-400">Phasellus dolor. In dui magna, posuere eget, vestibulum et, tempor auctor, justo fringilla mauris sit amet nibh. Suspendisse pulvinar, augue ac venenatis condimentum, sem libero volutpat...</p>
-                <div class="flex gap-2">
-                  <span class="px-2 py-1 text-lg font-bold bg-gray-400/10 rounded-sm">HTML</span>
-                </div>
-            </div>
-            <div class="flex flex-col gap-4 items-start">
-              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="browser 1.svg" class="w-6 h-6">View demo</button>
-              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="github.svg" class="w-6 h-6">Source code</button>
+              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10"><img src="browser 1.svg" class="w-6 h-6">View demo</button>
+              <button class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10"><img src="github.svg" class="w-6 h-6">Source code</button>
             </div>
             </div>
           </div>
@@ -174,29 +154,29 @@
           <p class="text-2xl lg:text-3xl">Outside of my regular working hours, I delve into an array of activities and passions. Here's a glimpse into how I spend my after-hours.</p>
         </div>
         <div class="grid grid-cols-1 gap-14 md:grid-cols-2 lg:grid-cols-4">
-        <article class="flex flex-col gap-6">
-          <img src="Frame 16.png" class="h-120 rounded-2xl"/>
+        <article class="flex flex-col gap-6 group">
+          <img src="Frame 16.png" class="h-120 rounded-2xl opacity-50 group-hover:opacity-100 group-hover:scale-110 duration-500 ease-in-out"/>
           <div class="flex flex-col gap-1.5">
           <h1 class="font-bold text-2xl">Electronic Music</h1>
           <p class="text-gray-400">Outside of my regular working hours, I immerse myself in the pulsating rhythms and innovative sounds of electronic music</p>
         </div>
         </article>
-        <article class="flex flex-col gap-6">
-          <img src="Frame 16.png" class="h-120 rounded-2xl"/>
+        <article class="flex flex-col gap-6 group">
+          <img src="Frame 16.png" class="h-120 rounded-2xl opacity-50 group-hover:opacity-100 group-hover:scale-110 duration-500 ease-in-out"/>
           <div class="flex flex-col gap-1.5">
           <h1 class="font-bold text-2xl">Star Wars Universum</h1>
           <p class="text-gray-400">In a galaxy not so far away, my leisure time is often spent exploring the intricate lore and captivating tales of Star Wars.</p>
         </div>
         </article>
-        <article class="flex flex-col gap-6">
-          <img src="Frame 16.png" class="h-120 rounded-2xl"/>
+        <article class="flex flex-col gap-6 group">
+          <img src="Frame 16.png" class="h-120 rounded-2xl opacity-50 group-hover:opacity-100 group-hover:scale-110 duration-500 ease-in-out"/>
           <div class="flex flex-col gap-1.5">
           <h1 class="font-bold text-2xl">Video Games</h1>
           <p class="text-gray-400">Lost in virtual realms, I find joy and challenge in the dynamic world of video games.</p>
         </div>
         </article>
-        <article class="flex flex-col gap-6">
-          <img src="Frame 16.png" class="h-120 rounded-2xl"/>
+        <article class="flex flex-col gap-6 group">
+          <img src="Frame 16.png" class="h-120 rounded-2xl opacity-50 group-hover:opacity-100 group-hover:scale-110 duration-500 ease-in-out"/>
           <div class="flex flex-col gap-1.5">
           <h1 class="font-bold text-2xl">Strength Training</h1>
           <p class="text-gray-400">Empowering both body and mind, I'm dedicated to the discipline of strength training, continuously pushing my limits.</p>
@@ -211,17 +191,22 @@
           <h1 class="font-bold text-3xl text-white">Let’s work together</h1>
           <p class="font-medium text-lg text-gray-400 text-center">I’m open for new opportunities. <br>If you have one for me we should talk!</p>
         </div>
-        <a href="mailto:qkari177@gmail.com" class="px-8 py-4 bg-cyan-500 rounded-2xl flex gap-3 font-bold text-gray-900 text-xl items-center"><img src="mail-01 1.svg" class="w-6 h-6">qkari177@gmail.com</a>
+        <div class="relative">
+        <div class=" absolute inset-0 -z-10 flex items-center justify-center">
+          <div class="bg-cyan-500/50 w-8/12 h-5/6 rounded-2xl animate-[ping_2.5s_ease-in-out_infinite]"></div>
+        </div>
+        <a href="mailto:qkari177@gmail.com" class="px-8 py-4 bg-cyan-500 rounded-2xl flex gap-3 font-bold text-gray-900 text-xl items-center hover:bg-opacity-70 hover:text-white"><img src="mail-01 1.svg" class="w-6 h-6">qkari177@gmail.com</a>
+      </div>
       </div>
       <div class="flex flex-col gap-6 items-center">
         <h1 class="text-2xl text-gray-400 font-medium">or find me on</h1>
         <div class="flex gap-4 flex-wrap items-center justify-center ">
-          <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-github 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
-          <a href="https://codepen.io/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-codepen 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
-          <a href="https://www.linkedin.com/in/dawid-thai-hai-65b507341/" target="_blank" rel="noopener noreferrer"><img src="bxl-linkedin-square 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
-          <a href="https://www.facebook.com/dawid.thaihai/" target="_blank" rel="noopener noreferrer"><img src="bxl-facebook-circle 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
-          <a href="https://www.instagram.com/qkari17/" target="_blank" rel="noopener noreferrer"><img src="bxl-instagram-alt 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
-          <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-twitter 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]"></a>
+          <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-github 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
+          <a href="https://codepen.io/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-codepen 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
+          <a href="https://www.linkedin.com/in/dawid-thai-hai-65b507341/" target="_blank" rel="noopener noreferrer"><img src="bxl-linkedin-square 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
+          <a href="https://www.facebook.com/dawid.thaihai/" target="_blank" rel="noopener noreferrer"><img src="bxl-facebook-circle 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
+          <a href="https://www.instagram.com/qkari17/" target="_blank" rel="noopener noreferrer"><img src="bxl-instagram-alt 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
+          <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer"><img src="bxl-twitter 1.svg" class="p-4 rounded-full backdrop-blur from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] hover:bg-white/10"></a>
         </div>
       </div>
     </footer>

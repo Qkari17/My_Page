@@ -20,6 +20,16 @@ module.exports = {
         fontFamily: {
     "DMsans": ["DM Sans", 'sans-serif']
 },
+keyframes: {
+  'rotatation': {
+    '0%': { transform: 'rotate(0.0deg)' },
+    '50%': { transform: 'rotate(180.0deg)' },
+    '100%': { transform: 'rotate(360.0deg)' },
+  },
+},
+animation: {
+  'rotation': 'rotatation 10s linear infinite',
+},
         },
   },
   plugins: [],

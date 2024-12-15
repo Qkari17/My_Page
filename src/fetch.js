@@ -6,11 +6,11 @@ fetch(`https://api.github.com/users/${username}/repos`)
 .then(response => {
     for (let repository of response){
         const {name,html_url,description,stargazers_count,topics} = repository;
-    const element = `<div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
+    const element = `<div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px] group">
             <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
-            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-red-400 group-hover:opacity-100 duration-300 ease-in-out"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-amber-400 group-hover:opacity-100 duration-500 ease-in-out"></span>
+            <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-green-500 group-hover:opacity-100 duration-700 ease-in-out"></span>
           </div>
             <div class=" p-5 flex flex-col gap-10">
               <div class="flex flex-col gap-4">
@@ -21,8 +21,8 @@ fetch(`https://api.github.com/users/${username}/repos`)
                 </div>
             </div>
             <div class="flex flex-col gap-4 items-start">
-              <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src="/browser%201.d70f8b2a.svg"  class="w-6 h-6">View demo</a>
-              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold"><img src=/github.2f4ba1ad.svg class="w-6 h-6">Source code</a>
+              <a href="https://github.com/Qkari17" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10"><img src="/browser%201.d70f8b2a.svg"  class="w-6 h-6">View demo</a>
+              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10"><img src=/github.2f4ba1ad.svg class="w-6 h-6">Source code</a>
             </div>
             </div>
           </div>`
