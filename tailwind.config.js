@@ -8,15 +8,18 @@ module.exports = {
       borderWidth: {
         '1': '1px',
     },
-    height: {
+       height: {
       '120': '30rem',
     },
- width: {
+       width: {
         '128': '32rem'
     },
-    right: {
+       right: {
       '-80': '20rem'
   },
+        fontFamily: {
+    "DMsans": ["DM Sans", 'sans-serif']
+},
         },
   },
   plugins: [],

@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link href="./index.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900 font-DMsans">
     <header class="w-auto h-[5.625rem] flex py-6 px-4 justify-between sticky top-0 bg-gray-900 z-30 text-white">
       <div class="flex gap-4">
         <img src="./Union.svg" class="text-cyan-500" />
@@ -28,12 +31,13 @@
         <div class="w-10 h-1 bg-white my-1 rounded-sm transition duration-700 ease-in-out ham-three--js"></div>
       </button>
     </header>
-    <div class="bg-gray-900  w-full fixed top-[5.625rem] flex flex-col items-center transition z-40 -right-[50rem] off-screen-menu--js duration-1000 ease-in-out md:hidden">
-      <ul class="text-white font-bold text-lg py-6">
-        <li class="ham-menu--js"><a href="#about">About</a></li>
+    <div class="bg-gray-900/80  w-full fixed top-[5.625rem] flex flex-col items-center transition z-40 -right-[50rem] off-screen-menu--js duration-1000 ease-in-out md:hidden">
+      <ul class="text-white font-bold text-lg py-2 flex flex-col gap-2 my-2">
+        <li><a href="#about">About</a></li>
         <li><a href="#skills">Skilss</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
+        <li><a href="_Dawid_Thai_Hai_cv.pdf" download class="flex gap-2">Resume</a></li>
       </ul>
     </div>
     <main class="text-white">
@@ -121,7 +125,7 @@
           <h1 class="font-bold text-gray-400 text-xl">Recent Projects</h1>
           <p class="text-2xl lg:text-3xl">Since diving into frontend development in 2024, I've brought a range of projects to life. Here's a snapshot of my accomplishments so far.</p>
         </article>
-        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3 repository--js">
           <div class="flex flex-col overflow-hidden rounded-2xl border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
             <div class="flex h-11 px-4 gap-1.5 items-center bg-white1 border-1 border-t-0 backdrop-blur border-gray-900 from-white/15 to-white/4 bg-gradient-to-br shadow-[rgba(255,255,255,0.2)_0px_-2px_0px_0px]">
             <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50"></span>
@@ -223,5 +227,6 @@
     </footer>
     <script src="main.js" type="module"></script>
     <script src="hamburger.js" type="module"></script>
+    <script src="fetch.js" type="module"></script>
   </body>
 </html>
