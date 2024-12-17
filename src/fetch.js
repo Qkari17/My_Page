@@ -32,7 +32,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
               <div class="flex gap-4">
                 <h1 class="font-bold text-2xl">${name}</h1>
                 <span class="flex px-2 py-0.5 rounded-md bg-gray-400/10 gap-0.5 items-center">
-                  <img src="${starIcon}" class="h-4 w-4">
+                  <img src="${starIcon}" alt="star" class="h-4 w-4">
                   <p class="text-gray-400">${stargazers_count}</p>
                 </span>
               </div>
@@ -40,9 +40,9 @@ fetch(`https://api.github.com/users/${username}/repos`)
               <div class="flex gap-2 flex-wrap">${topicsHTML}</div>
             </div>
             <div class="flex flex-col gap-4 items-start">
-            <a href="${homepage}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold  hover:border-cyan-500 duration-500 ease-in-out"><img src="${github}"  class="w-6 h-6">View demo</a>
+            <a href="${homepage}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold  hover:border-cyan-500 duration-500 ease-in-out"><img src="${github}" alt="github" class="w-6 h-6">View demo</a>
               <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold  hover:border-cyan-500 duration-500 ease-in-out">
-                <img src="${browser}" class="w-6 h-6">Source code
+                <img src="${browser}" alt="browser" class="w-6 h-6">Source code
               </a>
             </div>
           </div>
