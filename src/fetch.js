@@ -27,7 +27,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
             <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-amber-400 group-hover:opacity-100 duration-500 ease-in-out"></span>
             <span class="h-3 w-3 rounded-full bg-gray-900 opacity-50 group-hover:bg-green-500 group-hover:opacity-100 duration-700 ease-in-out"></span>
           </div>
-          <div class="p-5 flex flex-col gap-10">
+          <div class="p-5 flex flex-col gap-10 h-full justify-between">
             <div class="flex flex-col gap-4">
               <div class="flex gap-4">
                 <h1 class="font-bold text-2xl">${name}</h1>
