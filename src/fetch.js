@@ -37,11 +37,11 @@ fetch(`https://api.github.com/users/${username}/repos`)
                 </span>
               </div>
               <p class="text-xl text-gray-400">${descriptionText}</p>
-              <div class="flex gap-2">${topicsHTML}</div>
+              <div class="flex gap-2 flex-wrap">${topicsHTML}</div>
             </div>
             <div class="flex flex-col gap-4 items-start">
-            <a href="${homepage}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10"><img src="${github}"  class="w-6 h-6">View demo</a>
-              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold hover:bg-white/10">
+            <a href="${homepage}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold  hover:border-cyan-500 duration-500 ease-in-out"><img src="${github}"  class="w-6 h-6">View demo</a>
+              <a href="${html_url}" target="_blank" rel="noopener noreferrer" class="border-1 border-gray-700 bg-gray-900 px-5 py-4 flex gap-2 text-cyan-500 rounded-lg font-bold  hover:border-cyan-500 duration-500 ease-in-out">
                 <img src="${browser}" class="w-6 h-6">Source code
               </a>
             </div>
