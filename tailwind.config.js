@@ -30,6 +30,10 @@ keyframes: {
 animation: {
   'rotation': 'rotatation 10s linear infinite',
 },
+maxWidth: {
+'page': '82rem',
+'header': '90rem'
+},
         },
   },
   plugins: [],

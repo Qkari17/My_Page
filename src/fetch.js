@@ -1,8 +1,8 @@
 const username = 'Qkari17';
 const repositoriesContainer = document.querySelector('.repository--js');
-import starIcon from '/src/star-01.svg';
-import browser from '/src/browser-1.svg';
-import github from '/src/github.svg';
+import starIcon from './images/star-01.svg';
+import browser from './images/browser-1.svg';
+import github from './images/github.svg';
 
 fetch(`https://api.github.com/users/${username}/repos`)
   .then(response => {
