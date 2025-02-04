@@ -12,6 +12,7 @@ fetch(`https://api.github.com/users/${username}/repos`)
     return response.json();
   })
   .then(response => {
+    response.sort((a, b) => b.stargazers_count - a.stargazers_count);
     for (let repository of response) {
       const { name, html_url, description, stargazers_count, topics, homepage} = repository;
 
